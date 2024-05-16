@@ -32,12 +32,28 @@
             height: auto;
         }
 
-        ul {
-            padding: 0;
+        .message {
+            font-size: 1.5em;
         }
 
-        p {
-            font-size: 1.5em;
+        .cf-error-details {
+            padding-right: 300px;
+            padding-left: 300px;
+        }
+
+        .cf-error-details ul li {
+            list-style: none;
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            .cf-error-details {
+                padding: 0;
+            }
+        }
+
+        ul {
+            padding: 0;
         }
 
         div#footer-text {
