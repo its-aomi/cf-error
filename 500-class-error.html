@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,22 +18,49 @@
             font-family: Arial, sans-serif;
             text-align: center;
         }
+
         .container {
             text-align: center;
         }
+
         .logo {
             width: 250px;
         }
+
         .message {
             margin-top: 20px;
             font-size: 1.5em;
         }
+
+        .cf-error-details {
+            padding-right: 300px;
+            padding-left: 300px;
+        }
+
+        .cf-error-details ul li {
+            list-style: none;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <img src="./images/Betpanda-logo-loader.svg" alt="Logo" class="logo">
         <div class="message">::CLOUDFLARE_ERROR_500S_BOX::</div>
     </div>
 </body>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+  var errorDetailsElement = document.querySelector('.cf-error-details.cf-error-522');
+  if (errorDetailsElement) {
+    // Clear the existing content
+    errorDetailsElement.innerHTML = '';
+
+    // Add your custom content
+    var customContent = '<h1>Custom Error Message</h1><p>This is a custom error message displayed using JavaScript.</p>';
+    errorDetailsElement.insertAdjacentHTML('beforeend', customContent);
+  }
+});
+    </script>
 </html>
