@@ -21,7 +21,6 @@ body {
 .logo {
     max-width: 250px;
     height: auto;
-    padding-bottom: 100px;
 }
 
 .message {
@@ -83,12 +82,8 @@ h1 {
 }
 
 .preloader {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    width: 10em;
-    height: 10em;
+    position: relative;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
