@@ -63,3 +63,11 @@ h1 {
 .main-para {
     font-size: 1.5em;
 }
+
+h2#challenge-running {
+    margin-top: 0;
+}
+
+.ray-id {
+    padding-top: 30px;
+}
