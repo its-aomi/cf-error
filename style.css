@@ -21,6 +21,7 @@ body {
 .logo {
     max-width: 250px;
     height: auto;
+    padding-bottom: 100px;
 }
 
 .message {
@@ -66,4 +67,43 @@ h1 {
 
 .ray-id {
     padding-top: 30px;
+}
+
+/* Loader Animation */
+
+@keyframes ripple {
+    0% {
+        transform: scale(0.6);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2.6);
+        opacity: 0;
+    }
+}
+
+.preloader {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 10em;
+    height: 10em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader span {
+    display: block;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    border: 0.1em solid #1fe88a;
+    border-radius: 50%;
+    animation: ripple 2s ease-out infinite;
+}
+
+.preloader span:nth-child(2) {
+    animation-delay: -1s;
 }
